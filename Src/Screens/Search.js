@@ -51,7 +51,9 @@ const Search = ({ search }) => {
     <SafeAreaView
       style={{ flex: 1, paddingTop: 5, backgroundColor: COLORS.backgrond }}
     >
-      <ScrollView>
+      <ScrollView 
+      showsVerticalScrollIndicator={false}
+      >
         <Header name={"Wailed"} />
         <View
           style={{

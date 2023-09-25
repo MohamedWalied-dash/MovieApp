@@ -13,7 +13,7 @@ const Header = ({name , visable}) => {
       alignItems: "center",
       flexDirection: "row",
       width: "100%",
-      padding: 20,
+      padding: 15,
     }}
   >
     <TouchableOpacity>

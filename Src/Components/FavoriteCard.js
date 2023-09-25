@@ -6,7 +6,7 @@ import { AntDesign } from "@expo/vector-icons";
 import { BlurView } from "expo-blur";
 import { COLORS } from "../Conts/COLORS";
 
-const FavoriteCard = ({ image, name, rate, type }) => {
+const FavoriteCard = ({ image, name, rate, type,subtitle,time,favorite }) => {
   return (
     <View
       style={{
@@ -50,12 +50,12 @@ const FavoriteCard = ({ image, name, rate, type }) => {
               style={{
                 marginTop: 3,
               }}
-              name="bookmark"
+              name={favorite?"backspace":"bookmark"}
               color={COLORS.text}
-              size={20}
+              size={25}
             />
           </View>
-          <Text style={{ fontSize: 14, color: "gray", marginVertical: 15 }}>
+          <Text style={{ fontSize: 14, color: "gray", marginVertical: 10 }}>
             {type}
           </Text>
           <View
