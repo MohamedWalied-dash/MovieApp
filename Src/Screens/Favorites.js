@@ -51,32 +51,26 @@ const Favorites = ({ search }) => {
     <SafeAreaView
       style={{ flex: 1, paddingTop: 5, backgroundColor: COLORS.backgrond }}
     >
-      <ScrollView 
-      showsVerticalScrollIndicator={false}
-      >
-      <View style={{padding:10}}>
-      <Text style={{color:COLORS.text,fontSize:22,fontWeight: 'bold',}}>
-        All
-       </Text>
+      <View style={{ padding: 10 }}>
+        <Text style={{ color: COLORS.text, fontSize: 22, fontWeight: "bold" }}>
+          All
+        </Text>
       </View>
-        
-        <View>
-          <FlatList
-            data={data}
-            showsHorizontalScrollIndicator={false}
-            keyExtractor={(item) => item.id}
-            renderItem={({ item }) => (
-              <FavoriteCard
-                name={item.name}
-                image={item.image}
-                rate={item.rate}
-                type={item.type}
-                favorite
-              />
-            )}
+      <FlatList
+        data={data}
+        showsHorizontalScrollIndicator={false}
+        keyExtractor={(item) => item.id}
+        renderItem={({ item }) => (
+          <FavoriteCard
+            name={item.name}
+            image={item.image}
+            rate={item.rate}
+            type={item.type}
+            favorite
           />
-        </View>
-      </ScrollView>
+        )}
+      />
+      
     </SafeAreaView>
   );
 };

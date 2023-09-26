@@ -51,9 +51,7 @@ const Search = ({ search }) => {
     <SafeAreaView
       style={{ flex: 1, paddingTop: 5, backgroundColor: COLORS.backgrond }}
     >
-      <ScrollView 
-      showsVerticalScrollIndicator={false}
-      >
+    
         <Header name={"Wailed"} />
         <View
           style={{
@@ -114,7 +112,7 @@ const Search = ({ search }) => {
             )}
           </View>
         </View>
-        <View>
+     
           <FlatList
             data={data}
             showsHorizontalScrollIndicator={false}
@@ -128,8 +126,7 @@ const Search = ({ search }) => {
               />
             )}
           />
-        </View>
-      </ScrollView>
+  
     </SafeAreaView>
   );
 };
