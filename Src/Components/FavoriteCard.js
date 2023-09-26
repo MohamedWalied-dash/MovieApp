@@ -52,7 +52,7 @@ const FavoriteCard = ({ image, name, rate, type,subtitle,time,favorite }) => {
               }}
               name={favorite?"backspace":"bookmark"}
               color={COLORS.text}
-              size={25}
+              size={favorite?25:20}
             />
           </View>
           <Text style={{ fontSize: 14, color: "gray", marginVertical: 10 }}>
