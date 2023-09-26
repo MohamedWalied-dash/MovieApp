@@ -18,7 +18,7 @@ const Stack = () => {
     <NavigationContainer>
       <Stacks.Navigator 
       screenOptions={{ headerShown: false }}
-      initialRouteName="Tabs"
+      initialRouteName="Signin"
       >
         <Stacks.Screen name="Signin" component={Signin} />
         <Stacks.Screen name="Signup" component={Signup} />
